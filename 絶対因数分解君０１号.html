@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+ <title></title>
+ 
+ <script>
+
+     const a1 = parseInt(window.prompt('x^2'));
+     const a2 = parseInt(window.prompt('x'));
+     const a3 = parseInt(window.prompt('切片'));
+let b1 = -a2;
+let b2 = (a2*a2)-(4*a1*a3);
+let b3 = Math.sqrt(b2);
+let b4 = (b1+b3)/(2*a1);
+let b5 = (b1-b3)/(2*a1);
+if (b4<0 && b5>0){
+    document.write("(x" + b4 +")(x+" + b5 +")");
+} else if(b4<0 && b5<0){
+    document.write("(x" + b4 +")(x" + b5 +")");
+} else if(b4>0 && b5>0){
+    document.write("(x+" + b4 +")(x+" + b5 +")");
+} else if(b4>0 && b5<0){
+    document.write("(x+" + b4 +")(x" + b5 +")");
+};
+
+
+ 
+   
+ </script>
+</head>
+<body></body>
+</html>
